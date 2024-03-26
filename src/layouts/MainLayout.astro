@@ -1,7 +1,5 @@
 ---
-import { languageTag } from "../paraglide/runtime";
-
-const locale = languageTag();
+const locale = Astro.currentLocale;
 console.log("...Locale from layout: " + locale);
 
 ---

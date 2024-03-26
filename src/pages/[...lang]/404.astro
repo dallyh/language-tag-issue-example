@@ -1,5 +1,4 @@
 ---
-import { languageTag } from "../../paraglide/runtime";
 import MainLayout from "../../layouts/MainLayout.astro";
 
 // i18n routing
@@ -14,7 +13,7 @@ export async function getStaticPaths() {
     return paths;
 }
 
-const locale = languageTag();
+const locale = Astro.currentLocale;
 console.log("...Locale from page: " + locale);
 ---
 
