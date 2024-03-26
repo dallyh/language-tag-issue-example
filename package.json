@@ -1,0 +1,16 @@
+{
+    "name": "daliborhon.dev",
+    "type": "module",
+    "version": "1.0.0",
+    "scripts": {
+        "dev": "astro dev",
+        "build": "paraglide-js compile --project ./project.inlang && astro build"
+    },
+    "dependencies": {
+        "@inlang/paraglide-js-adapter-astro": "^0.1.17",
+        "astro": "^4.5.9"
+    },
+    "devDependencies": {
+        "@inlang/paraglide-js": "^1.3.4"
+    }
+}

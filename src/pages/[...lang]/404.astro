@@ -1,0 +1,21 @@
+---
+import { languageTag } from "../../paraglide/runtime";
+import MainLayout from "../../layouts/MainLayout.astro";
+
+// i18n routing
+export async function getStaticPaths() {
+    const locales = ["cs", "en"];
+    const defaultLocale = "cs";
+
+    const paths = locales.map((locale) => {
+        return { params: { lang: locale === defaultLocale ? undefined : locale } };
+    });
+
+    return paths;
+}
+
+const locale = languageTag();
+console.log("...Locale from page: " + locale);
+---
+
+<MainLayout />

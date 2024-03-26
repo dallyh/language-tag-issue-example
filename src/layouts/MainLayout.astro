@@ -1,0 +1,15 @@
+---
+import { languageTag } from "../paraglide/runtime";
+
+const locale = languageTag();
+console.log("...Locale from layout: " + locale);
+
+---
+
+<!doctype html>
+<html lang={locale}>
+    <head>
+    </head>
+    <body>
+    </body>
+</html>
